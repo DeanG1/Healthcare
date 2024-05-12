@@ -200,4 +200,23 @@ import androidx.annotation.Nullable;
             db.delete("cart", "username=? and otype=?",str);
             db.close();
         }
+
+        public ArrayList getCartData(String username, String otype){
+            ArrayList<String> arr = new ArrayList<>();
+            SQLiteDatabase db = getReadableDatabase();
+            String str[] = new String[2];
+            str[0] = username;
+            str[1] = otype;
+            Cursor c = db.rawQuery("select * from cart where username = ? and otype = ?",str);
+            if(c.moveToFirst()){
+                do{
+                    String product = c.getString(1);
+                    String price = c.getString(2);
+                    arr.add(product+"$"+price);
+                }
+                while(c.moveToNext());
+            }
+            db.close();
+            return arr;
+        }
     }
