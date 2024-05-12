@@ -54,7 +54,7 @@
     <ListView
         android:id="@+id/LtListView"
         android:layout_width="291dp"
-        android:layout_height="434dp"
+        android:layout_height="410dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
