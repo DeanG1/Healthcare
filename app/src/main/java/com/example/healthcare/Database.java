@@ -134,6 +134,9 @@ import androidx.annotation.Nullable;
         public void onCreate(SQLiteDatabase sqLiteDatabase) {
             String qry1 = "create table users(username text,email text,password text)";
             sqLiteDatabase.execSQL(qry1);
+
+            String qry2 = "create table cart(username text,product text,price float,otype text)";
+            sqLiteDatabase.execSQL(qry2);
         }
 
         @Override
@@ -160,5 +163,41 @@ import androidx.annotation.Nullable;
                 result=1;
             }
             return result;
+        }
+
+        //Add function for add to cart we pass parameters
+        public void addCart(String username, String product, float price, String otype){
+            ContentValues cv = new ContentValues();
+            cv.put("username", username);
+            cv.put("product", product);
+            cv.put("price", price);
+            cv.put("otype", otype);
+            SQLiteDatabase db = getWritableDatabase();
+            db.insert("cart",null,cv);
+            db.close();
+        }
+
+        //Function to check if the item already exists in our database we check by username and product
+        public int checkCart(String username, String product){
+            int result = 0;
+            String str[] = new String[2];
+            str[0] = username;
+            str[1] = product;
+            SQLiteDatabase db = getReadableDatabase();
+            Cursor c = db.rawQuery("select * from cart where username = ? and product = ? ", str);
+            if(c.moveToFirst()){
+                result=1;
+            }
+            db.close();
+            return result;
+        }
+
+        public void removeCart(String username, String otype){
+            String str[] = new String[2];
+            str[0] = username;
+            str[1] = otype;
+            SQLiteDatabase db = getWritableDatabase();
+            db.delete("cart", "username=? and otype=?",str);
+            db.close();
         }
     }
