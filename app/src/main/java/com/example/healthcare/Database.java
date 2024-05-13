@@ -248,7 +248,7 @@ import androidx.annotation.Nullable;
             Cursor c = db.rawQuery("select * from orderplace where username = ?",str);
             if(c.moveToFirst()){
                 do{
-                    arr.add(c.getString(1)+"$"+c.getString(2)+"$"+c.getString(3)+"$"+c.getString(4)+"$"+c.getString(5)+"$"+c.getString(6)+"$"+c.getString(7)+"$"+c.getString(8)+"$"+c.getString(9));
+                    arr.add(c.getString(1)+"$"+c.getString(2)+"$"+c.getString(3)+"$"+c.getString(4)+"$"+c.getString(5)+"$"+c.getString(6)+"$"+c.getString(7)+"$"+c.getString(8));
                 }while(c.moveToNext());
             }
             db.close();
