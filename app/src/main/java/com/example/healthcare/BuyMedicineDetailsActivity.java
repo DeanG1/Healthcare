@@ -25,8 +25,8 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
 
         tvPackageName = findViewById(R.id.textViewBMD);
         tvTotalCost = findViewById(R.id.textViewTotalCostBMD);
-        edDetails.setOnKeyListener(null);
         edDetails = findViewById(R.id.editTextTextMultilineBMD);
+        edDetails.setOnKeyListener(null);
         btnBack = findViewById(R.id.buttonBackBMD);
         btnAddToCart = findViewById(R.id.buttonAddToCartBMD);
 
@@ -38,7 +38,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BuyMedicineDetailsActivity.this,BuyMedicineActivity.class));
+                startActivity(new Intent(BuyMedicineDetailsActivity.this,HomeActivity.class));
             }
         });
         btnAddToCart.setOnClickListener(new View.OnClickListener() {

@@ -84,11 +84,10 @@ public class CartBuyMedicineActivity extends AppCompatActivity {
         btnCheckout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent it = new Intent(CartBuyMedicineActivity.this,BuyMedicineBookActivity.class);
-                //it.putExtra("price", tvTotal.getText());
-                //it.putExtra("date",dateButton.getText());
-                //startActivity(it);
-//                startActivity(new Intent(CartLabActivity.this,LabTestBookActivity.class));
+                Intent it = new Intent(CartBuyMedicineActivity.this,BuyMedicineBookActivity.class);
+                it.putExtra("price", tvTotal.getText());
+                it.putExtra("date",dateButton.getText());
+                startActivity(it);
             }
         });
         //datepicker popup
