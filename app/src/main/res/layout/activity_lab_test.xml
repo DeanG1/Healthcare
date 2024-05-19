@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back2"
-    tools:context=".LabTestActivity">
+    tools:context=".HealthyFood">
 
     <TextView
-        android:id="@+id/textViewLTName"
+        android:id="@+id/textViewHealthyFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="120dp"
-        android:text="Healthcare"
+        android:text="Eat Healthy"
         android:textColor="@color/white"
         android:textSize="34dp"
         android:textStyle="bold"
@@ -32,14 +32,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLTName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHealthyFood"
         app:layout_constraintVertical_bias="0.033" />
 
     <TextView
-        android:id="@+id/textViewLTTitle2"
+        android:id="@+id/textViewMenuText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lab Tests"
+        android:text="Our Menu"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -47,40 +47,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLTName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHealthyFood"
         app:layout_constraintVertical_bias="0.096" />
 
 
     <ListView
-        android:id="@+id/LtListView"
+        android:id="@+id/HFListView"
         android:layout_width="291dp"
         android:layout_height="410dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="142dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLTTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMenuText"
+        app:layout_constraintVertical_bias="0.222" />
 
+    <Button
+        android:id="@+id/buttonHFBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/buttonLTBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="16dp"
-            android:text="BACK"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <Button
-            android:id="@+id/buttonLTGoToCart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="260dp"
-            android:layout_marginBottom="16dp"
-            android:text="Cart"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/buttonHFGoToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

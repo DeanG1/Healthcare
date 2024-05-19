@@ -9,10 +9,10 @@
 
     <TextView
         android:textStyle="bold"
-        android:id="@+id/textViewHealthcare"
+        android:id="@+id/textViewFitAndHealth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Healthcare"
+        android:text="Fit And Health"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -108,4 +108,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.87"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Check Store Location"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNewUser" />
 </androidx.constraintlayout.widget.ConstraintLayout>

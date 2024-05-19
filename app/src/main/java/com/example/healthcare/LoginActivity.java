@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
     EditText edUsername, edPassword;
     Button btn;
-    TextView tv;
+    TextView tv1, tv2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,8 @@ public class LoginActivity extends AppCompatActivity {
         edUsername = findViewById(R.id.editTextLoginUsername);
         edPassword = findViewById(R.id.editTextLoginPassword);
         btn = findViewById(R.id.buttonLogin);
-        tv = findViewById(R.id.textViewNewUser);
+        tv1 = findViewById(R.id.textViewNewUser);
+        tv2 = findViewById(R.id.textViewLocation);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,12 +52,17 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        tv.setOnClickListener(new View.OnClickListener() {
+        tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
             }
         });
-
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, LocationActivity.class));
+            }
+        });
     }
 }

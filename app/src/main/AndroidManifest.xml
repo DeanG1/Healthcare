@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 
     <application
         android:allowBackup="true"
@@ -12,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Healthcare"
         tools:targetApi="31">
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
         <activity
             android:name=".HealthArticlesDetailsActivity"
             android:exported="false" />
@@ -40,10 +48,10 @@
             android:name=".CartLabActivity"
             android:exported="false" />
         <activity
-            android:name=".LabTestDetailsActivity"
+            android:name=".HealthyFoodDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".LabTestActivity"
+            android:name=".HealthyFood"
             android:exported="false" />
         <activity
             android:name=".BookAppointmentActivity"
@@ -69,6 +77,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD5Z6waaP1G29qHUb-d37yHNCSytrPj2t4" />
     </application>
 
 </manifest>

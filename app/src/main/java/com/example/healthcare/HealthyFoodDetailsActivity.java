@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class LabTestDetailsActivity extends AppCompatActivity {
+public class HealthyFoodDetailsActivity extends AppCompatActivity {
     TextView tvPackageName,tvTotalCost;
     EditText edDetails;
     Button btnAddToCart,btnBack;
@@ -24,8 +24,8 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         tvPackageName = findViewById(R.id.textViewPackageName);
         tvTotalCost = findViewById(R.id.textViewTotalCost);
         edDetails = findViewById(R.id.editTextTextMultiLine);
-        btnAddToCart = findViewById(R.id.buttonLTDAddToCart);
-        btnBack = findViewById(R.id.buttonLTDBack);
+        btnAddToCart = findViewById(R.id.buttonHFDAddToCart);
+        btnBack = findViewById(R.id.buttonHFDBack);
 
         //Make this not editable
         edDetails.setKeyListener(null);
@@ -37,7 +37,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LabTestDetailsActivity.this,LabTestActivity.class));
+                startActivity(new Intent(HealthyFoodDetailsActivity.this, HealthyFood.class));
             }
         });
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +57,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
                     //add to cart output a message and return to the previous page
                     db.addCart(username,product,price,"lab");
                     Toast.makeText(getApplicationContext(),"Record inserted to Cart",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LabTestDetailsActivity.this,LabTestActivity.class));
+                    startActivity(new Intent(HealthyFoodDetailsActivity.this, HealthyFood.class));
                 }
             }
         });

@@ -25,7 +25,7 @@
         android:columnCount="2"
         android:rowCount="3">
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardLabTest"
+            android:id="@+id/cardHealthyFood"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -51,7 +51,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LAB TEST"
+                    android:text="Eat Healthy"
                     android:textAlignment="center"
                     android:textColorHint="@color/black"
                     android:textStyle="bold"/>
@@ -222,6 +222,7 @@
                     android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
     </GridLayout>
 
 </RelativeLayout>
