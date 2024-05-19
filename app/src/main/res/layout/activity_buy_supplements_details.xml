@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back1"
-    tools:context=".BuyMedicineDetailsActivity">
+    tools:context=".BuySupplementsDetailsActivity">
 
     <TextView
-        android:id="@+id/textViewBMD"
+        android:id="@+id/textViewBMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Buy Medicnes"
+        android:text="Buy Supplements"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,14 +31,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBMD" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMS" />
 
     <TextView
         android:id="@+id/textView_logo4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="Healthcare"
+        android:text="Fit And Health"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -48,7 +48,7 @@
 
 
     <Button
-        android:id="@+id/buttonAddToCartBMD"
+        android:id="@+id/buttonAddToCartBMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -56,10 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultilineBMD" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultilineBMS" />
 
     <Button
-        android:id="@+id/buttonBackBMD"
+        android:id="@+id/buttonBackBMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -67,10 +67,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultilineBMD" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultilineBMS" />
 
     <EditText
-        android:id="@+id/editTextTextMultilineBMD"
+        android:id="@+id/editTextTextMultilineBMS"
         android:layout_width="310dp"
         android:layout_height="391dp"
         android:layout_marginTop="36dp"
@@ -88,7 +88,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textViewTotalCostBMD"
+        android:id="@+id/textViewTotalCostBMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -97,5 +97,5 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultilineBMD" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultilineBMS" />
 </androidx.constraintlayout.widget.ConstraintLayout>

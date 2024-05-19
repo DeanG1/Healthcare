@@ -6,14 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.sax.StartElementListener;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class BuyMedicineDetailsActivity extends AppCompatActivity {
+public class BuySupplementsDetailsActivity extends AppCompatActivity {
 
     TextView tvPackageName,tvTotalCost;
     EditText edDetails;
@@ -21,14 +20,14 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy_medicine_details);
+        setContentView(R.layout.activity_buy_supplements_details);
 
-        tvPackageName = findViewById(R.id.textViewBMD);
-        tvTotalCost = findViewById(R.id.textViewTotalCostBMD);
-        edDetails = findViewById(R.id.editTextTextMultilineBMD);
+        tvPackageName = findViewById(R.id.textViewBMS);
+        tvTotalCost = findViewById(R.id.textViewTotalCostBMS);
+        edDetails = findViewById(R.id.editTextTextMultilineBMS);
         edDetails.setOnKeyListener(null);
-        btnBack = findViewById(R.id.buttonBackBMD);
-        btnAddToCart = findViewById(R.id.buttonAddToCartBMD);
+        btnBack = findViewById(R.id.buttonBackBMS);
+        btnAddToCart = findViewById(R.id.buttonAddToCartBMS);
 
         Intent intent = getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
@@ -38,7 +37,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BuyMedicineDetailsActivity.this,HomeActivity.class));
+                startActivity(new Intent(BuySupplementsDetailsActivity.this,HomeActivity.class));
             }
         });
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
@@ -54,9 +53,9 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Product already added", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    db.addCart(username,product,price,"medicine");
+                    db.addCart(username,product,price,"supplement");
                     Toast.makeText(getApplicationContext(),"Record inserted to Cart",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(BuyMedicineDetailsActivity.this,BuyMedicineActivity.class));
+                    startActivity(new Intent(BuySupplementsDetailsActivity.this, BuySupplementsActivity.class));
                 }
             }
         });

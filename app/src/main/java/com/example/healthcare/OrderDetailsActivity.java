@@ -48,7 +48,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
             String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
             order_details[i][0] = strData[0];
             order_details[i][1] = strData[1];
-            if(strData[7].compareTo("medicine")==0){
+            if(strData[7].compareTo("supplement")==0){
                 order_details[i][3] = "Del:"+strData[4];
             }
             else{

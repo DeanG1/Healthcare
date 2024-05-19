@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
-public class CartBuyMedicineActivity extends AppCompatActivity {
+public class CartBuySupplementActivity extends AppCompatActivity {
     HashMap<String,String> item;
     SimpleAdapter sa;
     ArrayList list;
@@ -29,45 +29,45 @@ public class CartBuyMedicineActivity extends AppCompatActivity {
     private DatePickerDialog datePickerDialog;
     private TimePickerDialog timePickerDialog;
     private Button dateButton,btnCheckout,btnBack;
-    private String[][] packages = {};
+    private String[][] supplements = {};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cart_buy_medicine);
-        dateButton = findViewById(R.id.buttonDatePickerCartBM);
-        btnCheckout = findViewById(R.id.buttonCheckoutCartBM);
-        btnBack = findViewById(R.id.buttonBackCartBM);
-        tvTotal = findViewById(R.id.textViewTotalPriceCartBM);
-        lst = findViewById(R.id.listViewCartBM);
+        setContentView(R.layout.activity_cart_buy_supplements);
+        dateButton = findViewById(R.id.buttonDatePickerCartBS);
+        btnCheckout = findViewById(R.id.buttonCheckoutCartBS);
+        btnBack = findViewById(R.id.buttonBackCartBS);
+        tvTotal = findViewById(R.id.textViewTotalPriceCartBS);
+        lst = findViewById(R.id.listViewCartBS);
 
         SharedPreferences sharedPreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedPreferences.getString("username","").toString();
 
         Database db = new Database(getApplicationContext(),"healthcare", null,1);
         float totalAmount = 0;
-        ArrayList dbData = db.getCartData(username,"medicine");
+        ArrayList dbData = db.getCartData(username,"supplement");
 
-        packages = new String[dbData.size()][];
-        for(int i = 0; i<packages.length;i++){
-            packages[i] = new String[5];
+        supplements = new String[dbData.size()][];
+        for(int i = 0; i<supplements.length;i++){
+            supplements[i] = new String[5];
         }
         for(int i = 0;i<dbData.size();i++){
             String arrData = dbData.get(i).toString();
             String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
-            packages[i][0] = strData[0];
-            packages[i][4] = "Cost: "+strData[1]+"/-";
+            supplements[i][0] = strData[0];
+            supplements[i][4] = "Cost: "+strData[1]+"/-";
             totalAmount = totalAmount + Float.parseFloat(strData[1]);
         }
         tvTotal.setText("Total cost: "+totalAmount);
 
         list = new ArrayList();
-        for(int i=0;i<packages.length;i++){
+        for(int i=0;i<supplements.length;i++){
             item = new HashMap<String,String>();
-            item.put("line1", packages[i][0]);
-            item.put("line2", packages[i][1]);
-            item.put("line3", packages[i][2]);
-            item.put("line4", packages[i][3]);
-            item.put("line5", packages[i][4]);
+            item.put("line1", supplements[i][0]);
+            item.put("line2", supplements[i][1]);
+            item.put("line3", supplements[i][2]);
+            item.put("line4", supplements[i][3]);
+            item.put("line5", supplements[i][4]);
             list.add( item );
         }
         sa = new SimpleAdapter(this,list,
@@ -78,13 +78,13 @@ public class CartBuyMedicineActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CartBuyMedicineActivity.this,BuyMedicineActivity.class));
+                startActivity(new Intent(CartBuySupplementActivity.this, BuySupplementsActivity.class));
             }
         });
         btnCheckout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(CartBuyMedicineActivity.this,BuyMedicineBookActivity.class);
+                Intent it = new Intent(CartBuySupplementActivity.this, BuySupplementsBookActivity.class);
                 it.putExtra("price", tvTotal.getText());
                 it.putExtra("date",dateButton.getText());
                 startActivity(it);
