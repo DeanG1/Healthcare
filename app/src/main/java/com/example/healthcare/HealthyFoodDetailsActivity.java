@@ -19,7 +19,7 @@ public class HealthyFoodDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab_test_details);
+        setContentView(R.layout.activity_healthy_food_details);
 
         tvPackageName = findViewById(R.id.textViewPackageName);
         tvTotalCost = findViewById(R.id.textViewTotalCost);

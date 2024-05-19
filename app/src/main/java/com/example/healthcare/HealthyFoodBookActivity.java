@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class LabTestBookActivity extends AppCompatActivity {
+public class HealthyFoodBookActivity extends AppCompatActivity {
     EditText edname,edaddress,edcontact,edpincode;
     Button btnBooking;
 
@@ -19,10 +19,10 @@ public class LabTestBookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test_book);
-        edname = findViewById(R.id.editTextLTBFullName);
-        edaddress = findViewById(R.id.editTextLTBAddress);
-        edcontact = findViewById(R.id.editTextLTBContact);
-        edpincode = findViewById(R.id.editTextLTBPincode);
+        edname = findViewById(R.id.editTextHBBFullName);
+        edaddress = findViewById(R.id.editTextHBBAddress);
+        edcontact = findViewById(R.id.editTextHBBContact);
+        edpincode = findViewById(R.id.editTextHBBPincode);
         btnBooking = findViewById(R.id.buttonBooking);
 
         Intent intent = getIntent();
@@ -40,7 +40,7 @@ public class LabTestBookActivity extends AppCompatActivity {
                 db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),Integer.parseInt(edpincode.getText().toString()),date.toString(),time.toString(),Float.parseFloat(price[1].toString()),"lab");
                 db.removeCart(username,"lab");
                 Toast.makeText(getApplicationContext(),"Your booking is done succesfully", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(LabTestBookActivity.this, HomeActivity.class));
+                startActivity(new Intent(HealthyFoodBookActivity.this, HomeActivity.class));
             }
         });
     }

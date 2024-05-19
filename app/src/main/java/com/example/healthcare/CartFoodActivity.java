@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
-public class CartLabActivity extends AppCompatActivity {
+public class CartFoodActivity extends AppCompatActivity {
     HashMap<String,String> item;
     SimpleAdapter sa;
     ArrayList list;
@@ -30,11 +30,11 @@ public class CartLabActivity extends AppCompatActivity {
     private DatePickerDialog datePickerDialog;
     private TimePickerDialog timePickerDialog;
     private Button dateButton,timeButton,btnCheckout,btnBack;
-    private String[][] packages = {};
+    private String[][] meals = {};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cart_lab);
+        setContentView(R.layout.activity_cart_menu);
 
         dateButton = findViewById(R.id.buttonDatePickerCart);
         timeButton = findViewById(R.id.buttonTimePickerCart);
@@ -49,27 +49,27 @@ public class CartLabActivity extends AppCompatActivity {
         float totalAmount = 0;
         ArrayList dbData = db.getCartData(username,"lab");
 
-        packages = new String[dbData.size()][];
-        for(int i = 0; i<packages.length;i++){
-            packages[i] = new String[5];
+        meals = new String[dbData.size()][];
+        for(int i = 0; i<meals.length;i++){
+            meals[i] = new String[5];
         }
         for(int i = 0;i<dbData.size();i++){
             String arrData = dbData.get(i).toString();
             String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
-            packages[i][0] = strData[0];
-            packages[i][4] = "Cost: "+strData[1]+"/-";
+            meals[i][0] = strData[0];
+            meals[i][4] = "Cost: "+strData[1]+"/-";
             totalAmount = totalAmount + Float.parseFloat(strData[1]);
         }
         tvTotal.setText("Total cost: "+totalAmount);
 
         list = new ArrayList();
-        for(int i=0;i<packages.length;i++){
+        for(int i=0;i<meals.length;i++){
             item = new HashMap<String,String>();
-            item.put("line1", packages[i][0]);
-            item.put("line2", packages[i][1]);
-            item.put("line3", packages[i][2]);
-            item.put("line4", packages[i][3]);
-            item.put("line5", packages[i][4]);
+            item.put("line1", meals[i][0]);
+            item.put("line2", meals[i][1]);
+            item.put("line3", meals[i][2]);
+            item.put("line4", meals[i][3]);
+            item.put("line5", meals[i][4]);
             list.add( item );
         }
         sa = new SimpleAdapter(this,list,
@@ -80,13 +80,13 @@ public class CartLabActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CartLabActivity.this, HealthyFood.class));
+                startActivity(new Intent(CartFoodActivity.this, HealthyFood.class));
             }
         });
         btnCheckout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(CartLabActivity.this,LabTestBookActivity.class);
+                Intent it = new Intent(CartFoodActivity.this, HealthyFoodBookActivity.class);
                 it.putExtra("price", tvTotal.getText());
                 it.putExtra("date",dateButton.getText());
                 it.putExtra("time",timeButton.getText());

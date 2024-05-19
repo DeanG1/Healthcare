@@ -15,28 +15,56 @@ import java.util.HashMap;
 
 public class HealthyFood extends AppCompatActivity {
 
-    private String[][] packages = {
-            {"Package 1 : Full Body Checkup", "", "", "", "889"},
-            {"Package 2 : Blood Glucose Fasting", "", "", "", "399"},
-            {"Package 3 : COVID-19 Antibody - IgG", "", "", "", "499"},
-            {"Package 4 : Thyroid Check", "", "", "", "599"},
-            {"Package 5 : Immunity Check", "", "", "", "699"},
+    private String[][] meals = {
+            {"Meal 1 : Kung Pao Beef", "", "", "", "20.54"},
+            {"Meal 2 : Chipotle Chicken Al Pastor", "", "", "", "23.44"},
+            {"Meal 3 : Creamy Tuna Pasta Salad", "", "", "", "29.99"},
+            {"Meal 4 : Grilled Cilantro Lime Chicken", "", "", "", "26.50"},
+            {"Meal 5 : Shrimp and Grits", "", "", "", "33.70"},
+            {"Meal 6 : Lemon Ricotta Pasta", "", "", "", "19.99"},
 
     };
-    private String[] package_details = {
-            "Blood Glucose Fasting\n" +
-                    "HbA1c\n" +
-                    "Iron Studies\n" +
-                    "Kidney Function\n" +
-                    "Lipid Profile\n" +
-                    "Liver Function Test",
-                    "Blood Glucose Fasting",
-            "COVID-19 Antibody - IgG",
-            "Thyroid Profile-Total (T3, T4 & TSH Ultra-sensitive)",
-            "Iron Studies\n" +
-                    "Kidney Function\n" +
-                    "Lipid Profile\n" +
-                    "Liver Function Test"
+    private String[] meal_details = {
+            "1.Thinly slice the flank steak\n" +
+                    "2.Garlic powder, ginger powder, salt and pepper \n" +
+                    "3.Red bell pepper\n" +
+                    "4.Unsalted roasted peanuts\n" +
+                    "5.A blend of ketchup, franks hot sauce, apple cider vinegar, coconut aminos, and toasted sesame oil",
+                    "1.Chipotle peppers in adobo sauce\n" +
+                    "2.Olive oil\n" +
+                            "3.Kosher salt and pepper\n" +
+                    "4.ground coriander, cumin, garlic powder,\n" +
+                            "5.boneless, skinless chicken thighs",
+                    "1.Pasta\n" +
+                     "2.Celery Stalks: fresh for the best crunch\n" +
+                            "3.Frozen Green Peas, thawed\n" +
+                            "4.Tuna in Olive Oil, 1 jar, drained and flaked\n" +
+                            "5.Red Onion, thinly sliced, to garnish",
+            "1.Skinless Chicken Breasts: Ideally organic, free-range\n" +
+            "2.Fresh cilantro: using fresh is key\n" +
+                    "3.Lime: you will need to zest it\n" +
+                    "4.lime juice, about 2 limes\n" +
+                    "5.Garlic cloves, try to use fresh. Garlic powder won’t be the same\n" +
+                    "6.Ground coriander\n" +
+                    "7.Salt and black pepper",
+                    "1.Milk\n" +
+                    "2.Vegetable stock: For cooking the grits and ensuring lots of delicious flavor\n" +
+                    "3.Grits\n" +
+                    "4.Kosher salt & freshly ground black pepper\n" +
+                    "5.Olive oil\n" +
+                    "6.Garlic\n" +
+                    "7.Lemon\n" +
+                    "8.Shrimp\n" +
+                    "9.Fresh parsley",
+                    "1.Pasta\n" +
+                    "2.Olive oil: For cooking the garlic\n" +
+                    "3.Garlic\n" +
+                    "4.Milk\n" +
+                    "5.Ricotta cheese\n" +
+                    "6.Lemon\n" +
+                    "7.Parmesan cheese\n" +
+                    "8.Kosher salt and black pepper\n" +
+                    "8.Basil"
     };
     HashMap<String,String> item;
     ArrayList list;
@@ -46,7 +74,7 @@ public class HealthyFood extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab_test);
+        setContentView(R.layout.activity_healthy_food);
 
         btnGoToCart = findViewById(R.id.buttonHFGoToCart);
         btnBack = findViewById(R.id.buttonHFBack);
@@ -59,13 +87,13 @@ public class HealthyFood extends AppCompatActivity {
             }
         });
         list = new ArrayList();
-        for(int i=0; i<packages.length;i++){
+        for(int i=0; i<meals.length;i++){
             item = new HashMap<String,String>();
-            item.put("line1", packages[i][0]);
-            item.put("line2", packages[i][1]);
-            item.put("line3", packages[i][2]);
-            item.put("line4", packages[i][3]);
-            item.put("line5", "Total cost: " + packages[i][4]+"/-");
+            item.put("line1", meals[i][0]);
+            item.put("line2", meals[i][1]);
+            item.put("line3", meals[i][2]);
+            item.put("line4", meals[i][3]);
+            item.put("line5", "Total cost: " + meals[i][4]+"/-");
             list.add( item );
         }
 
@@ -78,9 +106,9 @@ public class HealthyFood extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent it = new Intent(HealthyFood.this, HealthyFoodDetailsActivity.class);
-                it.putExtra("text1",packages[i][0]);
-                it.putExtra("text2",package_details[i]);
-                it.putExtra("text3",packages[i][4]);
+                it.putExtra("text1",meals[i][0]);
+                it.putExtra("text2",meal_details[i]);
+                it.putExtra("text3",meals[i][4]);
                 startActivity(it);
             }
         });
@@ -88,7 +116,7 @@ public class HealthyFood extends AppCompatActivity {
         btnGoToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HealthyFood.this,CartLabActivity.class));
+                startActivity(new Intent(HealthyFood.this, CartFoodActivity.class));
             }
         });
     }
