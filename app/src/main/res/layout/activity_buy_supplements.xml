@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back2"
-    tools:context=".BuyMedicineActivity">
+    tools:context=".BuySupplementsActivity">
 
     <TextView
         android:id="@+id/textView_title"
@@ -37,17 +37,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/listViewBM"
+        android:id="@+id/listViewBS"
         android:layout_width="353dp"
         android:layout_height="463dp"
-
         android:layout_marginTop="21dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBMTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBSTitle" />
 
     <Button
-        android:id="@+id/buttonBackBM"
+        android:id="@+id/buttonBackBS"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         android:layout_marginTop="44dp"
@@ -55,15 +54,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewBM"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBS"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textViewBMTitle"
+        android:id="@+id/textViewBSTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Buy Medicines"
+        android:text="Buy Supplements"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_title" />
 
     <Button
-        android:id="@+id/buttonGoToCartBM"
+        android:id="@+id/buttonGoToCartBS"
         android:layout_width="223dp"
         android:layout_height="47dp"
         android:layout_marginTop="44dp"
@@ -80,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewBM"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBS"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

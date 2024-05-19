@@ -27,16 +27,16 @@
             android:name=".HealthArticlesActivity"
             android:exported="false" />
         <activity
-            android:name=".BuyMedicineBookActivity"
+            android:name=".BuySupplementsBookActivity"
             android:exported="false" />
         <activity
-            android:name=".CartBuyMedicineActivity"
+            android:name=".CartBuySupplementActivity"
             android:exported="false" />
         <activity
-            android:name=".BuyMedicineDetailsActivity"
+            android:name=".BuySupplementsDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".BuyMedicineActivity"
+            android:name=".BuySupplementsActivity"
             android:exported="false" />
         <activity
             android:name=".OrderDetailsActivity"

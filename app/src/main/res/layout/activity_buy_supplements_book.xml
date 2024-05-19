@@ -5,23 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".BuyMedicineBookActivity">
+    tools:context=".BuySupplementsBookActivity">
 
 
     <Button
-        android:id="@+id/buttonBookingMedicine"
+        android:id="@+id/buttonBookingSupplement"
         android:layout_width="345dp"
         android:layout_height="50dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/btn_bg"
         android:shadowColor="@color/white"
-        android:text="BOOK"
+        android:text="ORDER"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextContactBMB" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextContactBMS" />
 
     <EditText
-        android:id="@+id/editTextPincodeBMB"
+        android:id="@+id/editTextPincodeBMS"
         android:layout_width="329dp"
         android:layout_height="49dp"
         android:layout_marginTop="44dp"
@@ -40,10 +40,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.402"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAddressBMB" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddressBMS" />
 
     <EditText
-        android:id="@+id/editTextFullnameBMB"
+        android:id="@+id/editTextFullnameBMS"
         android:layout_width="333dp"
         android:layout_height="51dp"
         android:layout_marginTop="44dp"
@@ -61,10 +61,10 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPackageNameBMB" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPackageNameBMS" />
 
     <EditText
-        android:id="@+id/editTextAddressBMB"
+        android:id="@+id/editTextAddressBMS"
         android:layout_width="326dp"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
@@ -83,10 +83,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFullnameBMB" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFullnameBMS" />
 
     <EditText
-        android:id="@+id/editTextContactBMB"
+        android:id="@+id/editTextContactBMS"
         android:layout_width="325dp"
         android:layout_height="50dp"
         android:layout_marginTop="44dp"
@@ -105,14 +105,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.383"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPincodeBMB" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPincodeBMS" />
 
     <TextView
-        android:id="@+id/textViewPackageNameBMB"
+        android:id="@+id/textViewPackageNameBMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="Please Fill All Details for Booking"
+        android:text="Please Fill All Details for Ordering"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,7 +125,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Healthcare"
+        android:text="Fit And Health"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
