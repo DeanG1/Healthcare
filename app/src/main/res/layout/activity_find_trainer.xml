@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".FindDoctor">
+    tools:context=".FindTrainer">
     <TextView
-        android:id="@+id/titleFindDoctor"
+        android:id="@+id/titleFindTrainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HEALTHARE"
+        android:text="Fit And Health"
         android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -25,7 +25,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Top Doctors"
+        android:text="Top Trainers"
         android:textColor="#fff777"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -37,7 +37,7 @@
         android:columnCount="2"
         android:rowCount="3">
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFDFamilyPhysician"
+            android:id="@+id/cardFTFitnessTrainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -63,7 +63,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FAMILY PHYSICIANS"
+                    android:text="FITNESS TRAINER"
                     android:textAlignment="center"
                     android:textColorHint="@color/black"
                     android:textStyle="bold"/>
@@ -71,7 +71,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFDDietician"
+            android:id="@+id/cardFTLifestyleCoach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -97,14 +97,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DIETICIAN"
+                    android:text="LIFESTYLE COACH"
                     android:textAlignment="center"
                     android:textColorHint="@color/black"
                     android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFDDentist"
+            android:id="@+id/cardFTSportsCoach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -130,14 +130,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DENTIST"
+                    android:text="SPORTS COACH"
                     android:textAlignment="center"
                     android:textColorHint="@color/black"
                     android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFDSurgeon"
+            android:id="@+id/cardFTPersonalTrainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -163,14 +163,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SURGEON"
+                    android:text="PERSONAL TRAINER"
                     android:textAlignment="center"
                     android:textColorHint="@color/black"
                     android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFDCardiologist"
+            android:id="@+id/cardFTAthleticTrainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"
@@ -196,14 +196,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CARDIOLOGIST"
+                    android:text="ATHLETIC TRAINER"
                     android:textAlignment="center"
                     android:textColorHint="@color/black"
                     android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFDBack"
+            android:id="@+id/cardFTBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="2"

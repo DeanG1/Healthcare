@@ -7,10 +7,10 @@
     android:background="@drawable/background"
     tools:context=".BookAppointmentActivity">
     <TextView
-        android:id="@+id/textViewHealthcare"
+        android:id="@+id/textViewFitAndHealth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Healthcare"
+        android:text="Fit And Health"
         android:textColor="@color/white"
         android:textSize="40dp"
         android:textStyle="bold"
@@ -24,20 +24,20 @@
         android:id="@+id/textViewAppTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Appointment"
+        android:layout_marginTop="32dp"
+        android:text="Book Appointment Trainer"
         android:textColor="@color/white"
-        android:textSize="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFitAndHealth"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextAppFullName"
         android:layout_width="316dp"
         android:layout_height="50dp"
+        android:layout_marginTop="43dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -50,17 +50,17 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.376"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextAppAddress"
         android:layout_width="316dp"
         android:layout_height="45dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
@@ -73,18 +73,17 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.465"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFullName"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextAppContactNumber"
         android:layout_width="316dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
@@ -97,17 +96,17 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress"
-        app:layout_constraintVertical_bias="0.197"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextAppFees"
         android:layout_width="317dp"
         android:layout_height="48dp"
+        android:layout_marginTop="29dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
@@ -120,32 +119,33 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonBookAppointment"
-        android:layout_width="218dp"
-        android:layout_height="49dp"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
         android:text="Book appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.808"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="646dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonAppBack"
-        android:layout_width="227dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="124dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="24dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
@@ -153,28 +153,29 @@
         android:id="@+id/textViewAppDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="28dp"
         android:text="Select Date"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonAppDate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
     <TextView
         android:id="@+id/textViewAppTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="28dp"
         android:text="Select Time"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/buttonAppTime"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="0.863"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
     <Button
         android:id="@+id/buttonAppDate"
@@ -182,14 +183,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="12dp"
         android:text="27/12/2024"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBookAppointment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
     <Button
         android:id="@+id/buttonAppTime"
@@ -197,11 +195,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="12dp"
         android:text="11:00"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBookAppointment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
