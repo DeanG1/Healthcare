@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".CartLabActivity">
+    tools:context=".CartFoodActivity">
 
     <Button
         android:id="@+id/buttonBackCart"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginTop="28dp"
-        android:text="Healthcare"
+        android:text="Eat Healthy"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -61,12 +61,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="15dp"
-        android:text="Lab Test Cart Items"
+        android:text="Menu Cart"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewCartLocation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_logo7" />
 

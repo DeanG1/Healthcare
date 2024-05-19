@@ -42,10 +42,10 @@
             android:name=".OrderDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".LabTestBookActivity"
+            android:name=".HealthyFoodBookActivity"
             android:exported="false" />
         <activity
-            android:name=".CartLabActivity"
+            android:name=".CartFoodActivity"
             android:exported="false" />
         <activity
             android:name=".HealthyFoodDetailsActivity"
