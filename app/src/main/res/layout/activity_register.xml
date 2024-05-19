@@ -9,10 +9,10 @@
     tools:context=".RegisterActivity">
 
   <TextView
-      android:id="@+id/textViewHealthcare"
+      android:id="@+id/textViewFitAndHealth"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Healthcare"
+      android:text="Fit And Health"
       android:textColor="@color/white"
       android:textSize="40dp"
       android:textStyle="bold"
@@ -40,6 +40,7 @@
       android:id="@+id/editTextRegUsername"
       android:layout_width="267dp"
       android:layout_height="46dp"
+      android:layout_marginTop="36dp"
       android:background="@drawable/input_bg"
       android:drawableLeft="@drawable/ic_baseline_person_24"
       android:drawablePadding="10dp"
@@ -52,17 +53,16 @@
       android:paddingBottom="10dp"
       android:textColor="@color/white"
       android:textColorHint="@color/white"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.395"
+      app:layout_constraintTop_toBottomOf="@+id/textViewLogin"
       tools:ignore="DuplicateIds,MissingConstraints" />
 
   <EditText
       android:id="@+id/editTextRegEmail"
       android:layout_width="267dp"
       android:layout_height="46dp"
+      android:layout_marginTop="32dp"
       android:background="@drawable/input_bg"
       android:drawableLeft="@drawable/ic_baseline_email_24"
       android:drawablePadding="10dp"
@@ -75,18 +75,16 @@
       android:paddingBottom="10dp"
       android:textColor="@color/white"
       android:textColorHint="@color/white"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.499"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegUsername"
       tools:ignore="DuplicateIds,MissingConstraints" />
 
   <EditText
       android:id="@+id/editTextRegPassword"
       android:layout_width="267dp"
       android:layout_height="46dp"
-      android:layout_marginBottom="244dp"
+      android:layout_marginTop="28dp"
       android:background="@drawable/input_bg"
       android:drawableLeft="@drawable/ic_baseline_security_24"
       android:drawablePadding="10dp"
@@ -99,17 +97,16 @@
       android:paddingBottom="10dp"
       android:textColor="@color/white"
       android:textColorHint="@color/white"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextRegUsername"
-      app:layout_constraintVertical_bias="0.798"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegEmail"
       tools:ignore="MissingConstraints" />
 
   <EditText
       android:id="@+id/editTextRegConfirmPassword"
       android:layout_width="267dp"
       android:layout_height="46dp"
+      android:layout_marginTop="28dp"
       android:background="@drawable/input_bg"
       android:drawableLeft="@drawable/ic_baseline_security_24"
       android:drawablePadding="10dp"
@@ -122,18 +119,16 @@
       android:paddingBottom="10dp"
       android:textColor="@color/white"
       android:textColorHint="@color/white"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.71"
+      app:layout_constraintTop_toBottomOf="@+id/editTextRegPassword"
       tools:ignore="MissingConstraints" />
 
   <Button
       android:id="@+id/buttonRegister"
       android:layout_width="151dp"
       android:layout_height="47dp"
-      android:layout_marginBottom="96dp"
+      android:layout_marginBottom="80dp"
       android:text="Register"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +147,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
-      app:layout_constraintVertical_bias="0.262"
+      app:layout_constraintVertical_bias="0.702"
       tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

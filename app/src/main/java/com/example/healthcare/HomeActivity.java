@@ -38,11 +38,11 @@ public class HomeActivity extends AppCompatActivity {
                    startActivity(new Intent(HomeActivity.this, FindDoctor.class));
                }
            });
-           CardView labTest = findViewById(R.id.cardLabTest);
+           CardView labTest = findViewById(R.id.cardHealthyFood);
             labTest.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(HomeActivity.this,LabTestActivity.class));
+                    startActivity(new Intent(HomeActivity.this, HealthyFood.class));
                 }
             });
             CardView orderDetails = findViewById(R.id.cardOrderDetails);
@@ -60,13 +60,14 @@ public class HomeActivity extends AppCompatActivity {
                 }
             });
 
-            CardView healt = findViewById(R.id.cardHealthDoctor);
-            healt.setOnClickListener(new View.OnClickListener() {
+            CardView health = findViewById(R.id.cardHealthDoctor);
+            health.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(HomeActivity.this,HealthArticlesActivity.class));
                 }
             });
+
             }
         }
 

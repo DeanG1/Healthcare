@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back1"
-    tools:context=".LabTestDetailsActivity">
+    tools:context=".HealthyFoodDetailsActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="HealthCare"
+        android:text="Healthy Food"
         android:textColor="@color/white"
         android:textSize="40dp"
         android:textStyle="bold"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
-        android:text="Lab Test and Package"
+        android:text="Menu"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <Button
-        android:id="@+id/buttonLTDBack"
+        android:id="@+id/buttonHFDBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -87,7 +87,7 @@
         app:layout_constraintVertical_bias="0.56" />
 
     <Button
-        android:id="@+id/buttonLTDAddToCart"
+        android:id="@+id/buttonHFDAddToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"

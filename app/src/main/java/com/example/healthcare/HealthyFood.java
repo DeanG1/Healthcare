@@ -13,7 +13,7 @@ import android.widget.SimpleAdapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class LabTestActivity extends AppCompatActivity {
+public class HealthyFood extends AppCompatActivity {
 
     private String[][] packages = {
             {"Package 1 : Full Body Checkup", "", "", "", "889"},
@@ -48,14 +48,14 @@ public class LabTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test);
 
-        btnGoToCart = findViewById(R.id.buttonLTGoToCart);
-        btnBack = findViewById(R.id.buttonLTBack);
-        listView = findViewById(R.id.LtListView);
+        btnGoToCart = findViewById(R.id.buttonHFGoToCart);
+        btnBack = findViewById(R.id.buttonHFBack);
+        listView = findViewById(R.id.HFListView);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LabTestActivity.this,HomeActivity.class));
+                startActivity(new Intent(HealthyFood.this,HomeActivity.class));
             }
         });
         list = new ArrayList();
@@ -77,7 +77,7 @@ public class LabTestActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent it = new Intent(LabTestActivity.this,LabTestDetailsActivity.class);
+                Intent it = new Intent(HealthyFood.this, HealthyFoodDetailsActivity.class);
                 it.putExtra("text1",packages[i][0]);
                 it.putExtra("text2",package_details[i]);
                 it.putExtra("text3",packages[i][4]);
@@ -88,7 +88,7 @@ public class LabTestActivity extends AppCompatActivity {
         btnGoToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LabTestActivity.this,CartLabActivity.class));
+                startActivity(new Intent(HealthyFood.this,CartLabActivity.class));
             }
         });
     }
