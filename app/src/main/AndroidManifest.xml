@@ -21,10 +21,10 @@
             android:name=".LocationActivity"
             android:exported="false" />
         <activity
-            android:name=".HealthArticlesDetailsActivity"
+            android:name=".FitnessArticlesDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".HealthArticlesActivity"
+            android:name=".FitnessArticlesActivity"
             android:exported="false" />
         <activity
             android:name=".BuySupplementsBookActivity"

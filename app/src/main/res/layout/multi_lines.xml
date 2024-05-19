@@ -50,8 +50,6 @@
             android:text="TextView"
             android:textColor="#ffff66"
             android:textSize="12sp"/>
-        w
-
 
     </LinearLayout>
 </LinearLayout>
