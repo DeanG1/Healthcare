@@ -11,13 +11,14 @@
         android:id="@+id/textViewODTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="ORDER DETAILS"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="129dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo3"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -25,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Healthcare"
+        android:text="Fit And Health"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -37,9 +38,10 @@
         android:id="@+id/listViewOD"
         android:layout_width="343dp"
         android:layout_height="434dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="171dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewODTitle"
         tools:ignore="MissingConstraints" />
 
     <Button

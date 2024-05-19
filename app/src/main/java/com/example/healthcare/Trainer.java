@@ -1,13 +1,13 @@
 package com.example.healthcare;
 
-public class Doctor {
+public class Trainer {
     private int id;
     private String name;
     private String specialization;
 
     // Constructor
 
-    public Doctor(int id, String name, String specialization) {
+    public Trainer(int id, String name, String specialization) {
         this.id = id;
         this.name = name;
         this.specialization = specialization;

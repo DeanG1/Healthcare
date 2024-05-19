@@ -31,11 +31,11 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(new Intent(HomeActivity.this,LoginActivity.class));
                }
            });
-           CardView findDoctor = findViewById(R.id.cardFindDoctor);
-           findDoctor.setOnClickListener(new View.OnClickListener() {
+           CardView findTrainer = findViewById(R.id.cardFindTrainer);
+        findTrainer.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View v) {
-                   startActivity(new Intent(HomeActivity.this, FindDoctor.class));
+                   startActivity(new Intent(HomeActivity.this, FindTrainer.class));
                }
            });
            CardView labTest = findViewById(R.id.cardHealthyFood);
@@ -52,8 +52,8 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(new Intent(HomeActivity.this,OrderDetailsActivity.class));
                 }
             });
-            CardView buyMedicine = findViewById(R.id.cardBuySupplements);
-            buyMedicine.setOnClickListener(new View.OnClickListener() {
+            CardView buySupplements = findViewById(R.id.cardBuySupplements);
+        buySupplements.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(HomeActivity.this, BuySupplementsActivity.class));

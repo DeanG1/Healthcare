@@ -57,10 +57,10 @@
             android:name=".BookAppointmentActivity"
             android:exported="false" />
         <activity
-            android:name=".DoctorDetailsActivity"
+            android:name=".TrainerDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".FindDoctor"
+            android:name=".FindTrainer"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

@@ -91,7 +91,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFindDoctor"
+            android:id="@+id/cardFindTrainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -117,7 +117,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FIND DOCTOR"
+                    android:text="FIND TRAINER"
                     android:textAlignment="center"
                     android:textColorHint="@color/black"
                     android:textStyle="bold"/>

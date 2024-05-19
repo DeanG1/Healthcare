@@ -9,7 +9,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.CancellationSignal;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -81,7 +80,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BookAppointmentActivity.this, FindDoctor.class));
+                startActivity(new Intent(BookAppointmentActivity.this, FindTrainer.class));
             }
         });
         btnBook.setOnClickListener(new View.OnClickListener() {
