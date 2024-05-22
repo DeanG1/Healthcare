@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class BuySupplementsBookActivity extends AppCompatActivity {
     EditText edname,edaddress,edcontact,edpincode;
-    Button btnBooking;
+    Button btnBooking, btnBackSupplements;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ public class BuySupplementsBookActivity extends AppCompatActivity {
         edcontact = findViewById(R.id.editTextContactBMS);
         edpincode = findViewById(R.id.editTextPincodeBMS);
         btnBooking = findViewById(R.id.buttonBookingSupplement);
+        btnBackSupplements = findViewById(R.id.buttonBackSupplement);
 
         Intent intent = getIntent();
         String[] price = intent.getStringExtra("price").toString().split(java.util.regex.Pattern.quote(":"));
@@ -40,8 +41,12 @@ public class BuySupplementsBookActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Your booking is done succesfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(BuySupplementsBookActivity.this, HomeActivity.class));
             }
-
         });
-        finish();
+        btnBackSupplements.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BuySupplementsBookActivity.this, BuySupplementsActivity.class));
+            }
+        });
     }
 }

@@ -9,21 +9,33 @@
 
 
     <Button
-        android:id="@+id/buttonBookingSupplement"
-        android:layout_width="345dp"
+        android:id="@+id/buttonBackSupplement"
+        android:layout_width="130dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/btn_bg"
+        android:shadowColor="@color/white"
+        android:text="BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContactBMS" />
+
+    <Button
+        android:id="@+id/buttonBookingSupplement"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
         android:background="@drawable/btn_bg"
         android:shadowColor="@color/white"
         android:text="ORDER"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextContactBMS" />
 
     <EditText
         android:id="@+id/editTextPincodeBMS"
-        android:layout_width="329dp"
-        android:layout_height="49dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
@@ -38,15 +50,15 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAddressBMS" />
 
     <EditText
         android:id="@+id/editTextFullnameBMS"
-        android:layout_width="333dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -60,14 +72,15 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPackageNameBMS" />
 
     <EditText
         android:id="@+id/editTextAddressBMS"
-        android:layout_width="326dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
@@ -81,13 +94,13 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextFullnameBMS" />
 
     <EditText
         android:id="@+id/editTextContactBMS"
-        android:layout_width="325dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/input_bg"
@@ -103,7 +116,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPincodeBMS" />
 

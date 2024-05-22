@@ -82,7 +82,6 @@ public class TrainerDetailsActivity extends AppCompatActivity {
                 startActivity(new Intent(TrainerDetailsActivity.this, FindTrainer.class));
             }
         });
-        finish();
         list = new ArrayList();
         for(int i=0; i<trainer_details.length;i++){
             item = new HashMap<String,String>();

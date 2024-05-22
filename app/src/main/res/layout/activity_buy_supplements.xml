@@ -37,11 +37,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/listViewBS"
-        android:layout_width="348dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="70dp"
+        android:id="@+id/lstSupInfo"
+        android:layout_width="320dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="40dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBSTitle" />
 
@@ -49,12 +53,11 @@
         android:id="@+id/buttonBackBS"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
         android:text="BACK"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewBS"
+        app:layout_constraintTop_toBottomOf="@+id/lstSupInfo"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -71,14 +74,13 @@
 
     <Button
         android:id="@+id/buttonGoToCartBS"
-        android:layout_width="223dp"
+        android:layout_width="150dp"
         android:layout_height="47dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
         android:text="GO TO CART"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.835"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewBS"
+        app:layout_constraintTop_toBottomOf="@+id/lstSupInfo"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
