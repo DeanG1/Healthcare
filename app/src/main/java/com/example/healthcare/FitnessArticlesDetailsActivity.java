@@ -36,5 +36,6 @@ public class FitnessArticlesDetailsActivity extends AppCompatActivity {
                 startActivity(new Intent(FitnessArticlesDetailsActivity.this, FitnessArticlesActivity.class));
             }
         });
+        finish();
     }
 }

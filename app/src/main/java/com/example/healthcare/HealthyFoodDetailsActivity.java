@@ -61,5 +61,6 @@ public class HealthyFoodDetailsActivity extends AppCompatActivity {
                 }
             }
         });
+        finish();
     }
 }

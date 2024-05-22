@@ -52,6 +52,8 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+        finish();
+
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,5 +66,6 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(LoginActivity.this, LocationActivity.class));
             }
         });
+        finish();
     }
 }
