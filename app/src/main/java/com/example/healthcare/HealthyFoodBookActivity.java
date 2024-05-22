@@ -43,5 +43,6 @@ public class HealthyFoodBookActivity extends AppCompatActivity {
                 startActivity(new Intent(HealthyFoodBookActivity.this, HomeActivity.class));
             }
         });
+        finish();
     }
 }

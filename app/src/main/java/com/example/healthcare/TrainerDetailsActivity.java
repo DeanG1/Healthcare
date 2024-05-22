@@ -82,6 +82,7 @@ public class TrainerDetailsActivity extends AppCompatActivity {
                 startActivity(new Intent(TrainerDetailsActivity.this, FindTrainer.class));
             }
         });
+        finish();
         list = new ArrayList();
         for(int i=0; i<trainer_details.length;i++){
             item = new HashMap<String,String>();
@@ -98,7 +99,6 @@ public class TrainerDetailsActivity extends AppCompatActivity {
                 new int[]{R.id.line_a,R.id.line_b,R.id.line_c,R.id.line_d,R.id.line_e});
         ListView lst = findViewById(R.id.listViewTD);
         lst.setAdapter(sa);
-
         lst.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
@@ -111,5 +111,6 @@ public class TrainerDetailsActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+        finish();
     }
 }

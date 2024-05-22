@@ -59,5 +59,6 @@ public class BuySupplementsDetailsActivity extends AppCompatActivity {
                 }
             }
         });
+        finish();
     }
 }

@@ -40,6 +40,8 @@ public class BuySupplementsBookActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Your booking is done succesfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(BuySupplementsBookActivity.this, HomeActivity.class));
             }
+
         });
+        finish();
     }
 }

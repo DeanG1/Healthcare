@@ -141,5 +141,6 @@ public class CartFoodActivity extends AppCompatActivity {
 
         int style = AlertDialog.THEME_HOLO_DARK;
         timePickerDialog = new TimePickerDialog(this,style,timeSetListener,hrs,mins,true);
+        finish();
     }
 }

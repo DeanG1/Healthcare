@@ -74,5 +74,6 @@ public class FitnessArticlesActivity extends AppCompatActivity {
 
             }
         });
+        finish();
     }
 }

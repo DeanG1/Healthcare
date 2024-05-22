@@ -18,34 +18,49 @@ public class BuySupplementsActivity extends AppCompatActivity {
     private String[][] supplements =
             {
 
-                    {"Uprise-D3 1000IU Capsule", "", "", "",
+                    {"Whey Gold Standard - Optimum Nutrition", "", "", "",
                             "50"},
-                    {"HealthVit Chromium Picolinate 200mcg Capsule","","","","305"},
-                    {"Vitamin B Complex Capsules","","","","305"},
-                    {"Inlife Vitamin E Wheat Germ Oil Capsule","","","","539"},
-                    {"Dolo 650 Tablet", "","","", "30"},
-                    {"Crocin 650 Advance Tablet", "","","", "50"},
-                    {"Strepsils Medicated Lozenges for Sore Throat","","","","46"},
-                    {"Tata 1mg Calcium + Vitamin D3","","","","40"},
-                    {"Feronia -XT Tablet", "","","","130"},
+                    {"Protein Whey Isolate - ProSupps","","","","305"},
+                    {"L-Carnitine","","","","305"},
+                    {"Mutant Mass - PVL","","","","539"},
+                    {"Animal Pak - Universal Nutrition", "","","", "30"},
+                    {"Creatine Powder - Optimum Nutrition", "","","", "50"},
+                    {"Creatine monohydrate powder - Mammut Nutrition","","","","46"},
+                    {"Creavita - Activlab","","","","40"},
             };
     private String[] supplement_details = {
-            "Building and keeping the bones & teeth strong\n" +
-                    "Reducing Fatigue/stress and muscular pains\n" +
-                    "Boosting immunity and increasing resistance against infection",
-            "Chromium is an essential trace mineral that plays an important role in helping insulin regula",
-            "Provides relief from vitamin B deficiencies\n" +
-                    "Helps in formation of red blood cells\n" + "Maintains healthy nervous system",
-            "It promotes health as well as skin benefit.\n" +
-                    "It helps reduce skin blemish and pigmentation.\n" +
-                    "It act as safeguard the skin from the harsh UVA and UVB sun rays.",
-            "Dolo 650 Tablet helps relieve pain and fever by blocking the release of certain chemical mes:",
-            "Helps relieve fever and bring down a high temperature\n" +
-                    "Suitable for people with a heart condition or high blood pressure",
-            "Relieves the symptoms of a bacterial throat infection and soothes the recovery process\n" + "Provides a warm and comforting feeling during sore throat",
-            "Reduces the risk of calcium deficiency, Rickets, and Osteoporosis\n" +
-                    "Promotes mobility and flexibility of joints",
-            "Helps to reduce the iron deficiency due to chronic blood loss or low intake of iron"
+            "Whey protein Gold Standard 100% Whey Protein \n" +
+                    "contains a functional combination of whey isolate, concentrate and hydrolyzate.\n" +
+                    "It has an extremely useful amino acid spectrum,\n" +
+                    "good digestibility and a perfectly balanced taste.",
+            "Whey Isolate is a unique nutritional supplement of whey protein isolate\n" +
+            "containing 25 g of proteins  in one dose. \n" +
+                    "This makes it popular among athletes who seek to maintain and increase their muscle mass .\n" +
+                    "The product is sugar-free , but has a wonderful taste. \n" +
+            "It also contains selected minerals and the fat burner l-carnitine.",
+                    "L-carnitine ranks among the most popular fat burners. \n" +
+                    " Its main job is to transport fats (fatty acids) to the cellular powerhouses called mitochondria,\n" +
+            "where they are then burned to generate energy.\n" +
+            "This fat burner works best in combination with physical activity and a properly composed diet.",
+                    "Mutant Mass is an exceptional gainer for everyone who wants to gain quality muscle mass.\n" +
+            " It contains 10 different protein ingredients and an excellent spectrum of amino acids. \n" +
+                            "Each serving offers 26 g of protein and 85 g of carbohydrates , which is everything your muscles need for immediate growth.",
+            "Animal Pak is a complex source of nutrients in the form of packets of tablets that contain the required dose of nutrients. \n" +
+                    " Contains up to 60 ingredients , including vitamins, minerals, plant extracts, amino acids and enzymes.\n" +
+            "They are suitable not only for athletes, but also for all people who want to strengthen their immunity, muscle function and metabolism, as well as reduce fatigue.",
+            "Creatine Powder is 100% pure Creapure creatine monohydrate micronized into small particles, \n" +
+                    "which ensures perfect dissolution in any drink. \n" +
+                    "It has no taste or smell, but is crystalline and pure.\n" +
+                    "It has a positive effect on overall sports achievements, supports the growth of muscle mass, reduces the feeling of fatigue, increases the energy level and endurance of the body.",
+            "Creatine monohydrate is particularly popular with athletes who want to get the most out of their workouts. \n" +
+                    "The product helps to improve physical performance during intense training. \n" +
+                    "One dose of it contains an effective amount of 5.1 g of creatine, plus 129 mg of magnesium. \n" +
+                    "In turn, magnesium contributes to the reduction of fatigue and exhaustion.\n" +
+                    "In turn, magnesium contributes to the reduction of fatigue and exhaustion.",
+            "Creavita is a supplement in the form of creatine monohydrate for increasing physical performance\n" +
+                    "during short consecutive intervals of high-intensity training. \n" +
+                    "It is also enriched with B vitamins and taurine, which is a common ingredient in energy drinks.\n" +
+                    "This effective formula will be appreciated by strength athletes, fans of crossfit, HIIT training and other dynamic sports."
     };
 
     HashMap<String,String> item;
@@ -102,6 +117,8 @@ public class BuySupplementsActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
+        finish();
     }
 
 }
