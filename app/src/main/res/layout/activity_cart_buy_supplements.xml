@@ -11,19 +11,19 @@
         android:id="@+id/buttonBackCartBS"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
         android:text="BACK"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDatePickerCartBS" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalPriceCartBS" />
 
     <ListView
         android:id="@+id/listViewCartBS"
         android:layout_width="347dp"
         android:layout_height="320dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBSCartLocation" />
 
@@ -31,12 +31,13 @@
         android:id="@+id/textView_logo7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
         android:layout_marginTop="64dp"
         android:text="Fit And Health"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
-        android:text="Lab Test Cart Items"
+        android:text="Supplements Cart"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,12 +84,11 @@
         android:id="@+id/buttonCheckoutCartBS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
         android:text="Checkout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDatePickerCartBS" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalPriceCartBS" />
 
     <Button
         android:id="@+id/buttonDatePickerCartBS"
@@ -97,6 +97,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="4dp"
         android:text="15/07/2022"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deliverDateCartBS" />
@@ -106,6 +107,7 @@
         android:layout_width="164dp"
         android:layout_height="33dp"
         android:layout_marginTop="12dp"
+        android:textAlignment="center"
         android:text="Select Deliver Date"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

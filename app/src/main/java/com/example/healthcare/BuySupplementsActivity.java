@@ -73,7 +73,7 @@ public class BuySupplementsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buy_supplements);
 
-        lst = findViewById(R.id.listViewBS);
+        lst = findViewById(R.id.lstSupInfo);
         btnBack = findViewById(R.id.buttonBackBS);
         btnGoToCart = findViewById(R.id.buttonGoToCartBS);
 
