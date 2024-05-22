@@ -20,7 +20,7 @@ import android.widget.Toast;
 import java.util.Calendar;
 
 public class BookAppointmentActivity extends AppCompatActivity {
-    EditText ed1,ed2,ed3,ed4;
+    EditText ed1,ed2,ed3;
     TextView tv;
     private DatePickerDialog datePickerDialog;
     private TimePickerDialog timePickerDialog;
@@ -34,7 +34,6 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1 = findViewById(R.id.editTextAppFullName);
         ed2 = findViewById(R.id.editTextAppAddress);
         ed3 = findViewById(R.id.editTextAppContactNumber);
-        ed4 = findViewById(R.id.editTextAppFees);
         dateButton = findViewById(R.id.buttonAppDate);
         timeButton = findViewById(R.id.buttonAppTime);
         btnBook = findViewById(R.id.buttonBookAppointment);
@@ -44,7 +43,6 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1.setKeyListener(null);
         ed2.setKeyListener(null);
         ed3.setKeyListener(null);
-        ed4.setKeyListener(null);
         //Edit texts are not editable
 
         //Fetch the data with help of Intent(intent obj, set the info in this variables)
@@ -60,7 +58,6 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1.setText(fullname);
         ed2.setText(address);
         ed3.setText(contact);
-        ed4.setText("Cons fees:"+fees+"/-");
         //Datepicker
         initDatePicker();
         dateButton.setOnClickListener(new View.OnClickListener() {
