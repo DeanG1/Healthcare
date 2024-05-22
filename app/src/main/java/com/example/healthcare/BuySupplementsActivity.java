@@ -118,7 +118,6 @@ public class BuySupplementsActivity extends AppCompatActivity {
             }
         });
 
-        finish();
     }
 
 }

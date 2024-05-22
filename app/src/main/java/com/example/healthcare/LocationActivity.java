@@ -33,7 +33,6 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
                 startActivity(new Intent(LocationActivity.this,LoginActivity.class));
             }
         });
-        finish();
     }
 
     @Override
@@ -42,7 +41,5 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
         LatLng location = new LatLng(42.1499994 ,24.749997);
         googleMap.addMarker(new MarkerOptions().position(location).title("Plovdiv"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location,12));
-        finish();
-
     }
 }
