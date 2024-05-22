@@ -6,39 +6,40 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".HealthyFoodBookActivity">
+
     <TextView
         android:id="@+id/textViewFitAndHealth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
         android:text="Eat Healthy"
         android:textColor="@color/white"
         android:textSize="40dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:text="Please fill the details for ordering"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFitAndHealth"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextHBBFullName"
-        android:layout_width="267dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="400dp"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -51,15 +52,15 @@
         android:paddingBottom="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogin"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextHBBAddress"
-        android:layout_width="267dp"
-        android:layout_height="46dp"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_email_24"
@@ -80,8 +81,8 @@
 
     <EditText
         android:id="@+id/editTextHBBPincode"
-        android:layout_width="267dp"
-        android:layout_height="46dp"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
@@ -102,8 +103,8 @@
 
     <EditText
         android:id="@+id/editTextHBBContact"
-        android:layout_width="267dp"
-        android:layout_height="46dp"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
@@ -124,15 +125,25 @@
 
     <Button
         android:id="@+id/buttonBooking"
-        android:layout_width="151dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="80dp"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="28dp"
         android:text="Order"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHBBPincode"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/btnMenuBack"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="68dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHBBPincode"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

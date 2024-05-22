@@ -111,6 +111,5 @@ public class TrainerDetailsActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
-        finish();
     }
 }

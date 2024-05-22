@@ -119,6 +119,5 @@ public class HealthyFood extends AppCompatActivity {
                 startActivity(new Intent(HealthyFood.this, CartFoodActivity.class));
             }
         });
-        finish();
     }
 }

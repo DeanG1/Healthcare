@@ -66,6 +66,5 @@ public class FindTrainer extends AppCompatActivity {
                 startActivity(it);
             }
         });
-        finish();
     }
 }

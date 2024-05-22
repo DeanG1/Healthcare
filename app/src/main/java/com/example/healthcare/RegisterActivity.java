@@ -59,7 +59,6 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
-        finish();
     }
     public static boolean isValid(String passwordhere){
         int f1=0,f2=0,f3=0;

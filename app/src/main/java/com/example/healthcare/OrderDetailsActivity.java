@@ -72,6 +72,5 @@ public class OrderDetailsActivity extends AppCompatActivity {
                 new String[] {"line1","line2","line3","line4","line5"},
                 new int[] {R.id.line_a, R.id.line_b, R.id.line_c, R.id.line_d, R.id.line_e});
         lst.setAdapter(sa);
-        finish();
     }
 }

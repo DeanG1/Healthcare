@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class HealthyFoodBookActivity extends AppCompatActivity {
     EditText edname,edaddress,edcontact,edpincode;
-    Button btnBooking;
+    Button btnBooking, btnMenuBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class HealthyFoodBookActivity extends AppCompatActivity {
         edcontact = findViewById(R.id.editTextHBBContact);
         edpincode = findViewById(R.id.editTextHBBPincode);
         btnBooking = findViewById(R.id.buttonBooking);
+        btnMenuBack = findViewById(R.id.btnMenuBack);
 
         Intent intent = getIntent();
         String[] price = intent.getStringExtra("price").toString().split(java.util.regex.Pattern.quote(":"));
@@ -43,6 +44,12 @@ public class HealthyFoodBookActivity extends AppCompatActivity {
                 startActivity(new Intent(HealthyFoodBookActivity.this, HomeActivity.class));
             }
         });
-        finish();
+        btnMenuBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HealthyFoodBookActivity.this, HealthyFood.class));
+            }
+        });
+
     }
 }
