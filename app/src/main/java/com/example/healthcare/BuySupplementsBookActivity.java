@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class BuySupplementsBookActivity extends AppCompatActivity {
-    EditText edname,edaddress,edcontact,edpincode;
+    EditText edname,edaddress,edcontact;
     Button btnBooking, btnBackSupplements;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,6 @@ public class BuySupplementsBookActivity extends AppCompatActivity {
         edname = findViewById(R.id.editTextFullnameBMS);
         edaddress = findViewById(R.id.editTextAddressBMS);
         edcontact = findViewById(R.id.editTextContactBMS);
-        edpincode = findViewById(R.id.editTextPincodeBMS);
         btnBooking = findViewById(R.id.buttonBookingSupplement);
         btnBackSupplements = findViewById(R.id.buttonBackSupplement);
 
@@ -36,7 +35,7 @@ public class BuySupplementsBookActivity extends AppCompatActivity {
                 String username = sharedPreferences.getString("username","").toString();
 
                 Database db = new Database(getApplicationContext(),"healthcare",null,1);
-                db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),Integer.parseInt(edpincode.getText().toString()),date.toString(),"",Float.parseFloat(price[1].toString()),"supplement");
+                db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),date.toString(),"",Float.parseFloat(price[1].toString()),"supplement");
                 db.removeCart(username,"supplement");
                 Toast.makeText(getApplicationContext(),"Your booking is done succesfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(BuySupplementsBookActivity.this, HomeActivity.class));

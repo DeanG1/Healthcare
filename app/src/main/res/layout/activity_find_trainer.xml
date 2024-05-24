@@ -16,10 +16,11 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Fit And Health"
+        android:text="Fit &amp; Health"
         android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="40sp"
+        android:fontFamily="@font/roboto_black"
+        />
     <TextView
         android:id="@+id/titleFindDoctorTop"
         android:layout_width="wrap_content"

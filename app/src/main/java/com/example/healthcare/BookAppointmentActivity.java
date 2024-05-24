@@ -90,7 +90,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Appointment already booked", Toast.LENGTH_LONG).show();
                 }
                 else{
-                    db.addOrder(username,title+" => "+fullname,address,contact,0,dateButton.getText().toString(),timeButton.getText().toString(),Float.parseFloat(fees),"appointment");
+                    db.addOrder(username,title+" => "+fullname,address,contact,dateButton.getText().toString(),timeButton.getText().toString(),Float.parseFloat(fees),"appointment");
                     Toast.makeText(getApplicationContext(),"Your appointment is done succesfully",Toast.LENGTH_LONG).show();
                     startActivity(new Intent(BookAppointmentActivity.this,HomeActivity.class));
                 }
