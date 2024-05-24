@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class HealthyFoodBookActivity extends AppCompatActivity {
-    EditText edname,edaddress,edcontact,edpincode;
+    EditText edname,edaddress,edcontact;
     Button btnBooking, btnMenuBack;
 
     @Override
@@ -22,7 +22,6 @@ public class HealthyFoodBookActivity extends AppCompatActivity {
         edname = findViewById(R.id.editTextHBBFullName);
         edaddress = findViewById(R.id.editTextHBBAddress);
         edcontact = findViewById(R.id.editTextHBBContact);
-        edpincode = findViewById(R.id.editTextHBBPincode);
         btnBooking = findViewById(R.id.buttonBooking);
         btnMenuBack = findViewById(R.id.btnMenuBack);
 
@@ -38,7 +37,7 @@ public class HealthyFoodBookActivity extends AppCompatActivity {
                 String username = sharedPreferences.getString("username","").toString();
 
                 Database db = new Database(getApplicationContext(),"healthcare",null,1);
-                db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),Integer.parseInt(edpincode.getText().toString()),date.toString(),time.toString(),Float.parseFloat(price[1].toString()),"lab");
+                db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),date.toString(),time.toString(),Float.parseFloat(price[1].toString()),"lab");
                 db.removeCart(username,"lab");
                 Toast.makeText(getApplicationContext(),"Your booking is done succesfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(HealthyFoodBookActivity.this, HomeActivity.class));

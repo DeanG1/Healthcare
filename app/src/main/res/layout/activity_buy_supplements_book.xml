@@ -32,33 +32,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextContactBMS" />
 
-    <EditText
-        android:id="@+id/editTextPincodeBMS"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:hint="Pin Code"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAddressBMS" />
 
     <EditText
         android:id="@+id/editTextFullnameBMS"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="84dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
@@ -72,7 +51,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPackageNameBMS" />
 
@@ -80,7 +59,7 @@
         android:id="@+id/editTextAddressBMS"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
@@ -94,7 +73,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextFullnameBMS" />
 
@@ -102,7 +81,7 @@
         android:id="@+id/editTextContactBMS"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
@@ -116,9 +95,9 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPincodeBMS" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddressBMS" />
 
     <TextView
         android:id="@+id/textViewPackageNameBMS"
@@ -137,12 +116,14 @@
         android:id="@+id/textView_logo9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Fit And Health"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Fit &amp; Health"
         android:textColor="@color/white"
-        android:textSize="34sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

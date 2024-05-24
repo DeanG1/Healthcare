@@ -26,10 +26,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Fit And Health"
+        android:text="Fit &amp; Health"
+        android:fontFamily="@font/roboto_black"
         android:textColor="@color/white"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

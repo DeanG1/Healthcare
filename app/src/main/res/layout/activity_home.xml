@@ -6,16 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
     android:background="@drawable/background">
+
     <TextView
         android:id="@+id/titleHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fit And Health"
-        android:textColor="#fff"
-        android:textSize="30sp"
-        android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_margin="12dp"/>
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Fit &amp; Health"
+        android:textColor="#fff"
+        android:textSize="40sp" />
 
     <GridLayout
         android:layout_width="match_parent"
